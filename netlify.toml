@@ -1,0 +1,29 @@
+[[redirects]]
+  from = "/twitter"
+  to = "https://twitter.com/liyasthomas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linkedin"
+  to = "https://www.linkedin.com/in/liyasthomas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/email"
+  to = "mailto:liyascthomas@gmail.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/liyasthomas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/calendar"
+  to = "https://calendly.com/liyasthomas/30m"
+  status = 301
+  force = true
