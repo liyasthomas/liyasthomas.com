@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col">
     <Logo />
     <HelloWorld />
     <Footer />
@@ -14,7 +14,6 @@ import Footer from "./components/Footer.vue";
 
 <style>
 #app {
-  @apply text-gray-800;
   @apply p-4;
 }
 </style>
