@@ -1,9 +1,11 @@
 <template>
-  <h1 class="mt-4 text-3xl font-bold">Liyas Thomas</h1>
-  <p class="mt-4">
-    Founder & CEO of
-    <a href="https://hoppscotch.io" target="_blank">Hoppscotch</a>
-  </p>
+  <div class="flex flex-col flex-1 p-4">
+    <h1 class="text-4xl font-bold">Liyas Thomas</h1>
+    <p class="mt-4 text-xl font-bold">
+      Founder & CEO of
+      <a href="https://hoppscotch.io" target="_blank">Hoppscotch</a>
+    </p>
+  </div>
 </template>
 
 <style scoped>

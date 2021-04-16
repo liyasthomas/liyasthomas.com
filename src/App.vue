@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col h-screen">
     <Logo />
     <HelloWorld />
     <Footer />
@@ -11,9 +11,3 @@ import Logo from "./components/Logo.vue";
 import HelloWorld from "./components/HelloWorld.vue";
 import Footer from "./components/Footer.vue";
 </script>
-
-<style>
-#app {
-  @apply p-4;
-}
-</style>
