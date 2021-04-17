@@ -12,11 +12,17 @@
       >
         <div class="event-heading">
           <div class="event-indicator"></div>
-          <div class="event-headline">
+          <component
+            :is="event.link ? 'a' : 'div'"
+            :href="event.link"
+            target="_blank"
+            rel="noopener"
+            class="event-headline"
+          >
             <span class="event-date">{{ event.date }}</span>
             <span class="event-divider">—</span>
             <span class="event-title">{{ event.title }}</span>
-          </div>
+          </component>
         </div>
         <div v-if="event.description" class="event-description">
           {{ event.description }}
@@ -37,6 +43,8 @@
   @apply items-center;
 }
 .event-indicator {
+  @apply flex;
+  @apply flex-shrink-0;
   @apply w-8;
   @apply h-8;
   @apply bg-gray-400;
@@ -52,11 +60,19 @@
 }
 .event-description {
   @apply ml-12;
-  @apply text-gray-400;
+  @apply text-gray-500;
   @apply dark:text-gray-400;
 }
 .event-divider {
   @apply mx-2;
+}
+a {
+  @apply text-purple-600;
+  @apply dark:text-yellow-400;
+}
+a:hover {
+  @apply text-purple-800;
+  @apply dark:text-yellow-200;
 }
 </style>
 

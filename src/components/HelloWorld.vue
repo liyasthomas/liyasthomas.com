@@ -3,7 +3,9 @@
     <h1 class="text-4xl font-bold">Liyas Thomas</h1>
     <p class="mt-4 text-xl font-bold">
       Founder & CEO of
-      <a href="https://hoppscotch.io" target="_blank">Hoppscotch</a>
+      <a href="https://hoppscotch.io" target="_blank" rel="noopener"
+        >Hoppscotch</a
+      >
     </p>
   </div>
 </template>
