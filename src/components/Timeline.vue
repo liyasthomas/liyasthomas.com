@@ -1,10 +1,10 @@
 <template>
-  <div class="relative flex flex-1 mx-4 my-8">
+  <div class="relative flex flex-col flex-1 mx-4 my-8">
     <div
-      class="absolute top-0 h-full border-r-2 border-gray-200 dark:border-gray-600"
+      class="absolute top-0 h-full border-r-2 border-gray-200 dark:border-gray-800"
       style="z-index: -1; left: 15px"
     ></div>
-    <ul class="flex flex-col justify-end space-y-16">
+    <ul class="flex flex-col justify-end space-y-10 md:space-y-12">
       <li
         v-for="(event, index) in timeline"
         :key="`event-${index}`"
@@ -19,7 +19,13 @@
             rel="noopener"
             class="event-headline"
           >
-            <span class="event-date">{{ event.date }}</span>
+            <span class="event-date">{{
+              new Intl.DateTimeFormat("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              }).format(new Date(event.date))
+            }}</span>
             <span class="event-divider">—</span>
             <span class="event-title">{{ event.title }}</span>
           </component>
@@ -36,11 +42,10 @@
 .event-item {
   @apply flex;
   @apply flex-col;
-  @apply space-y-2;
+  @apply space-y-1;
 }
 .event-heading {
   @apply flex;
-  @apply items-center;
 }
 .event-indicator {
   @apply flex;
@@ -55,7 +60,8 @@
   @apply dark:bg-gray-600;
 }
 .event-headline {
-  @apply ml-4;
+  @apply mx-4;
+  @apply my-1;
   @apply font-medium;
 }
 .event-description {

@@ -27,10 +27,10 @@
 <style scoped>
 a {
   @apply text-blue-600;
-  @apply dark:text-blue-400;
+  @apply dark:text-indigo-400;
 }
 a:hover {
   @apply text-blue-700;
-  @apply dark:text-blue-200;
+  @apply dark:text-indigo-200;
 }
 </style>

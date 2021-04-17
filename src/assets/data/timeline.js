@@ -28,21 +28,22 @@ export default [
       "https://liyasthomas.hashnode.dev/ebb-feel-life-again-from-a-new-perspective",
   },
   {
-    date: "30 December 2020",
+    date: "28 December 2020",
     title: "Joined Appwrite",
-    description: "Freelance designer",
+    description: "Product designer.",
     link: "",
   },
   {
     date: "27 November 2020",
     title: "10,000+ GitHub stars for Hoppscotch",
     description: "",
-    link: "",
+    link:
+      "https://dev.to/liyasthomas/celebrating-10-000-stars-on-github-together-4ilg",
   },
   {
     date: "31 October 2020",
     title: "Won 2 HackerNoon Noonies Awards 2020",
-    description: "Contributor of the Year - TESTING & FUNDRAISING",
+    description: "Contributor of the Year - TESTING & FUNDRAISING.",
     link: "",
   },
   {
@@ -98,25 +99,37 @@ export default [
   {
     date: "16 September 2019",
     title: "Joined Buy me a coffee",
-    description: "Product engineer",
+    description: "Product engineer.",
     link: "",
   },
   {
     date: "21 August 2019",
     title: "Made Postwoman",
-    description: "Started as a side-project / personal tool for myself.",
+    description: "Started as a personal tool for myself.",
     link: "",
   },
   {
     date: "16 July 2019",
     title: "Joined Zartek Technologies",
-    description: "Front-end developer",
+    description: "Front-end developer.",
     link: "",
   },
   {
     date: "2 June 2019",
     title: "Graduated from college",
-    description: "Bachelor of Technology in Computer Science and Engineering.",
+    description: "Computer science and engineering.",
+    link: "",
+  },
+  {
+    date: "10 March 2014",
+    title: "Finished school",
+    description: "",
+    link: "",
+  },
+  {
+    date: "28 September 2011",
+    title: "Bought first computer",
+    description: "",
     link: "",
   },
   { date: "12 July 1996", title: "Born", description: "", link: "" },

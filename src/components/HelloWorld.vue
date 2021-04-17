@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col p-4">
     <h1 class="text-4xl font-bold">Liyas Thomas</h1>
-    <p class="mt-4 text-xl font-bold">
+    <p class="mt-4 text-xl">
       Founder & CEO of
       <a href="https://hoppscotch.io" target="_blank" rel="noopener"
         >Hoppscotch</a
@@ -12,11 +12,11 @@
 
 <style scoped>
 a {
-  @apply text-blue-600;
-  @apply dark:text-blue-400;
+  @apply text-pink-600;
+  @apply dark:text-green-400;
 }
 a:hover {
-  @apply text-blue-800;
-  @apply dark:text-blue-200;
+  @apply text-pink-800;
+  @apply dark:text-green-200;
 }
 </style>
