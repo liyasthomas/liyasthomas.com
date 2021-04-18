@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex flex-col flex-1 mx-4 my-8">
+  <div class="relative flex flex-col flex-1 mx-6 my-8">
     <div
       class="absolute top-0 h-full border-r-2 border-gray-200 dark:border-gray-800"
       style="z-index: -1; left: 15px"
