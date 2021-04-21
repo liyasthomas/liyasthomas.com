@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex flex-col flex-1 mx-6 my-8">
     <div
-      class="absolute top-0 h-full border-r-2 border-gray-200 dark:border-gray-800"
+      class="absolute border-r-2 border-gray-200 bottom-1 top-1 dark:border-gray-800"
       style="z-index: -1; left: 15px"
     ></div>
     <ul class="flex flex-col justify-end space-y-10 md:space-y-12">
@@ -54,6 +54,7 @@
   @apply flex-shrink-0;
   @apply w-8;
   @apply h-8;
+  @apply my-1;
   @apply bg-gray-400;
   @apply border-8;
   @apply border-white;
