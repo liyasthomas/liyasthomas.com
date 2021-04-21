@@ -6,7 +6,7 @@
     ></div>
     <ul class="flex flex-col justify-end space-y-10 md:space-y-12">
       <li
-        v-for="(event, index) in timeline"
+        v-for="(event, index) in timeline.slice(0, eventCount)"
         :key="`event-${index}`"
         class="event-item"
       >
@@ -36,13 +36,15 @@
       </li>
     </ul>
   </div>
+  <div v-if="eventCount < timeline.length" class="more-container">
+    <button class="more-event" @click="eventCount += 5">Show more</button>
+  </div>
 </template>
 
 <style scoped>
 .event-item {
   @apply flex;
   @apply flex-col;
-  @apply space-y-1;
 }
 .event-heading {
   @apply flex;
@@ -60,11 +62,15 @@
   @apply dark:bg-gray-600;
 }
 .event-headline {
+  @apply px-2;
+  @apply py-1;
   @apply mx-4;
   @apply my-1;
   @apply font-medium;
 }
 .event-description {
+  @apply px-2;
+  @apply py-1;
   @apply ml-12;
   @apply text-gray-500;
   @apply dark:text-gray-400;
@@ -72,13 +78,48 @@
 .event-divider {
   @apply mx-2;
 }
-a {
-  @apply text-purple-600;
-  @apply dark:text-yellow-400;
+.more-container {
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply h-0;
+  @apply border-b;
+  @apply border-dashed;
+  @apply my-4;
+  @apply mx-6;
+  @apply border-gray-200;
+  @apply dark:border-gray-800;
 }
-a:hover {
-  @apply text-purple-800;
-  @apply dark:text-yellow-200;
+.more-event {
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply absolute;
+  @apply px-4;
+  @apply py-2;
+  @apply rounded-full;
+  @apply font-bold;
+  @apply focus:outline-none;
+  @apply focus-within:ring;
+  @apply focus-within:ring-yellow-400;
+  @apply dark:focus-within:ring-purple-600;
+  @apply text-white;
+  @apply bg-purple-600;
+  @apply hover:bg-purple-800;
+  @apply dark:bg-yellow-400;
+  @apply dark:hover:bg-yellow-200;
+  @apply dark:text-black;
+}
+a {
+  @apply rounded-lg;
+  @apply focus:outline-none;
+  @apply focus-within:ring;
+  @apply focus-within:ring-yellow-400;
+  @apply dark:focus-within:ring-purple-600;
+  @apply text-purple-600;
+  @apply hover:text-purple-800;
+  @apply dark:text-yellow-400;
+  @apply dark:hover:text-yellow-200;
 }
 </style>
 
@@ -89,6 +130,11 @@ export default {
   setup() {
     return {
       timeline: data,
+    };
+  },
+  data() {
+    return {
+      eventCount: 5,
     };
   },
 };

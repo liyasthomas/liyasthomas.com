@@ -26,11 +26,16 @@
 
 <style scoped>
 a {
+  @apply px-2;
+  @apply py-1;
+  @apply rounded-lg;
+  @apply focus:outline-none;
+  @apply focus-within:ring;
+  @apply focus-within:ring-indigo-400;
+  @apply dark:focus-within:ring-blue-600;
   @apply text-blue-600;
+  @apply hover:text-blue-700;
   @apply dark:text-indigo-400;
-}
-a:hover {
-  @apply text-blue-700;
-  @apply dark:text-indigo-200;
+  @apply dark:hover:text-indigo-200;
 }
 </style>
