@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex flex-col flex-1 mx-6 my-8">
+  <div class="relative flex flex-col flex-1 m-6">
     <div
       class="absolute border-r-2 border-gray-200 bottom-1 top-1 dark:border-gray-800"
       style="z-index: -1; left: 15px"
@@ -110,6 +110,7 @@
   @apply dark:bg-yellow-400;
   @apply dark:hover:bg-yellow-200;
   @apply dark:text-black;
+  @apply transition-all;
 }
 a {
   @apply rounded-lg;
@@ -121,6 +122,7 @@ a {
   @apply hover:text-purple-800;
   @apply dark:text-yellow-400;
   @apply dark:hover:text-yellow-200;
+  @apply transition-all;
 }
 </style>
 

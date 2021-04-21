@@ -23,5 +23,6 @@ a {
   @apply hover:text-pink-800;
   @apply dark:text-green-400;
   @apply dark:hover:text-green-200;
+  @apply transition-all;
 }
 </style>

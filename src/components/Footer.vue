@@ -37,5 +37,6 @@ a {
   @apply hover:text-blue-700;
   @apply dark:text-indigo-400;
   @apply dark:hover:text-indigo-200;
+  @apply transition-all;
 }
 </style>
