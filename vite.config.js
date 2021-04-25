@@ -44,13 +44,13 @@ export default defineConfig({
             url: "/linkedin",
             icons: [{ src: "/images/linkedin.png", sizes: "96x96" }],
           },
-          {
-            name: "GitHub",
-            short_name: "GitHub",
-            description: "View my GitHub profile",
-            url: "/github",
-            icons: [{ src: "/images/github.png", sizes: "96x96" }],
-          },
+          // {
+          //   name: "GitHub",
+          //   short_name: "GitHub",
+          //   description: "View my GitHub profile",
+          //   url: "/github",
+          //   icons: [{ src: "/images/github.png", sizes: "96x96" }],
+          // },
           {
             name: "E-mail",
             short_name: "E-mail",
