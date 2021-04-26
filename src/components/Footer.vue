@@ -14,7 +14,7 @@
     <a href="https://github.com/liyasthomas" target="_blank" rel="noopener"
       >GitHub</a
     >
-    <a href="mailto:liyascthomas@gmail.com">E-mail</a>
+    <a href="mailto:hi@liyasthomas.com">E-mail</a>
     <a
       href="https://calendly.com/liyasthomas/30m"
       target="_blank"
