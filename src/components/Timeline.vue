@@ -1,10 +1,10 @@
 <template>
-  <div class="relative flex flex-col flex-1 m-6">
+  <div class="relative flex flex-col flex-1 m-8">
     <div
       class="absolute border-r-2 border-gray-200 bottom-1 top-1 dark:border-gray-800"
       style="z-index: -1; left: 15px"
     ></div>
-    <ul class="flex flex-col justify-end space-y-10 md:space-y-12">
+    <ul class="flex flex-col justify-end space-y-10 md:space-y-8">
       <li
         v-for="(event, index) in timeline.slice(0, eventCount)"
         :key="`event-${index}`"
@@ -71,7 +71,6 @@
 }
 .event-description {
   @apply px-2;
-  @apply py-1;
   @apply ml-12;
   @apply text-gray-500;
   @apply dark:text-gray-400;
@@ -86,8 +85,7 @@
   @apply h-0;
   @apply border-b;
   @apply border-dashed;
-  @apply my-4;
-  @apply mx-6;
+  @apply m-8;
   @apply border-gray-200;
   @apply dark:border-gray-800;
 }

@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col items-start p-8 space-y-4 text-sm md:space-x-4 md:flex-row md:space-y-0"
+    class="flex flex-col items-start m-8 space-y-4 text-sm md:space-x-4 md:flex-row md:space-y-0"
   >
     <a href="https://twitter.com/liyasthomas" target="_blank" rel="noopener"
       >Twitter</a
