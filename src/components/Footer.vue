@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col items-start m-8 space-y-4 text-sm md:space-x-4 md:flex-row md:space-y-0"
+    class="flex flex-col items-start m-8 space-y-4 text-sm md:(space-x-4 flex-row space-y-0)"
   >
     <a href="https://twitter.com/liyasthomas" target="_blank" rel="noopener"
       >Twitter</a
@@ -29,14 +29,11 @@ a {
   @apply px-2;
   @apply py-1;
   @apply rounded-lg;
-  @apply focus:outline-none;
-  @apply focus-within:ring;
-  @apply focus-within:ring-indigo-400;
-  @apply dark:focus-within:ring-blue-600;
   @apply text-blue-600;
+  @apply focus:outline-none;
+  @apply focus-within:(ring ring-indigo-400);
   @apply hover:text-blue-700;
-  @apply dark:text-indigo-400;
-  @apply dark:hover:text-indigo-200;
+  @apply dark:(text-indigo-400 focus-within:ring-blue-600 hover:text-indigo-200);
   @apply transition-all;
 }
 </style>

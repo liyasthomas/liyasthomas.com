@@ -59,8 +59,7 @@
   @apply border-8;
   @apply border-gray-50;
   @apply rounded-full;
-  @apply dark:border-gray-900;
-  @apply dark:bg-gray-600;
+  @apply dark:(border-gray-900 bg-gray-600);
 }
 .event-headline {
   @apply px-2;
@@ -100,28 +99,21 @@
   @apply md:ml-14;
   @apply rounded-lg;
   @apply font-bold;
-  @apply focus:outline-none;
-  @apply focus-within:ring;
-  @apply focus-within:ring-yellow-400;
-  @apply dark:focus-within:ring-purple-600;
   @apply text-gray-50;
   @apply bg-purple-600;
-  @apply hover:bg-purple-800;
-  @apply dark:bg-yellow-400;
-  @apply dark:hover:bg-yellow-200;
-  @apply dark:text-gray-900;
+  @apply focus:outline-none;
+  @apply focus-within:(ring ring-yellow-400);
+  @apply hover:(bg-purple-800);
+  @apply dark:(text-gray-900 bg-yellow-400 focus-within:ring-purple-600 hover:bg-yellow-200);
   @apply transition-all;
 }
 a {
   @apply rounded-lg;
-  @apply focus:outline-none;
-  @apply focus-within:ring;
-  @apply focus-within:ring-yellow-400;
-  @apply dark:focus-within:ring-purple-600;
   @apply text-purple-600;
-  @apply hover:text-purple-800;
-  @apply dark:text-yellow-400;
-  @apply dark:hover:text-yellow-200;
+  @apply focus:outline-none;
+  @apply focus-within:(ring ring-yellow-400);
+  @apply hover:(text-purple-800);
+  @apply dark:(text-yellow-400 focus-within:ring-purple-600 hover:text-yellow-200);
   @apply transition-all;
 }
 </style>
