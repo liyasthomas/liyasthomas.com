@@ -1,15 +1,11 @@
 <template>
-  <div class="relative flex flex-col flex-1 m-8">
+  <div class="relative flex flex-col">
     <div
       class="absolute border-r-2 border-gray-200 bottom-1 top-1 dark:border-gray-800"
       style="z-index: -1; left: 15px"
     ></div>
     <ul class="flex flex-col justify-end space-y-10 md:space-y-8">
-      <li
-        v-for="(event, index) in timeline.slice(0, eventCount)"
-        :key="`event-${index}`"
-        class="event-item"
-      >
+      <li v-for="(event, index) in timeline.slice(0, eventCount)" :key="`event-${index}`" class="event-item">
         <div class="event-heading">
           <div class="event-indicator"></div>
           <component
@@ -20,10 +16,10 @@
             class="event-headline"
           >
             <span class="event-date">{{
-              new Intl.DateTimeFormat("en-US", {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
+              new Intl.DateTimeFormat('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
               }).format(new Date(event.date))
             }}</span>
             <span class="event-divider">—</span>
@@ -119,18 +115,18 @@ a {
 </style>
 
 <script>
-import data from "../assets/data/timeline";
+import data from '../assets/data/timeline'
 
 export default {
   setup() {
     return {
-      timeline: data,
-    };
+      timeline: data
+    }
   },
   data() {
     return {
-      eventCount: 5,
-    };
-  },
-};
+      eventCount: 5
+    }
+  }
+}
 </script>

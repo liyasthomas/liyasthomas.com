@@ -1,0 +1,16 @@
+@import './markdown.css';
+
+#nprogress {
+  @apply pointer-events-none;
+}
+
+#nprogress .bar {
+  @apply bg-teal-600;
+  @apply opacity-75;
+  @apply fixed;
+  @apply z-1;
+  @apply top-0;
+  @apply left-0;
+  @apply w-full;
+  @apply h-0.5;
+}

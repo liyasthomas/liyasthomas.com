@@ -1,17 +1,15 @@
-<template>
-  <div class="flex flex-col min-h-screen">
-    <Logo />
-    <HelloWorld />
-    <Timeline />
-    <Subscribe />
-    <Footer />
-  </div>
-</template>
+<script setup lang="ts">
+import { useHead } from "@vueuse/head"
 
-<script setup>
-import Logo from "./components/Logo.vue";
-import HelloWorld from "./components/HelloWorld.vue";
-import Timeline from "./components/Timeline.vue";
-import Subscribe from "./components/Subscribe.vue";
-import Footer from "./components/Footer.vue";
+// https://github.com/vueuse/head
+// you can use this to manipulate the document head in any components,
+// they will be rendered correctly in the html results with vite-ssg
+useHead({
+  title: "Liyas Thomas",
+  meta: [{ name: "description", content: "Founder & CEO of Hoppscotch" }]
+})
 </script>
+
+<template>
+  <router-view />
+</template>
