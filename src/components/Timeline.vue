@@ -82,6 +82,7 @@
   @apply flex;
   @apply items-center;
   @apply justify-center;
+  @apply md:justify-start;
   @apply h-0;
   @apply border-b;
   @apply border-dashed;
@@ -94,9 +95,10 @@
   @apply items-center;
   @apply justify-center;
   @apply absolute;
-  @apply px-5;
-  @apply py-3;
-  @apply rounded-full;
+  @apply px-4;
+  @apply py-2;
+  @apply md:ml-14;
+  @apply rounded-lg;
   @apply font-bold;
   @apply focus:outline-none;
   @apply focus-within:ring;

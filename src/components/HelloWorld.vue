@@ -18,8 +18,8 @@ a {
   @apply focus:outline-none;
   @apply focus-within:ring;
   @apply focus-within:ring-green-400;
-  @apply dark:focus-within:ring-pink-600;
-  @apply text-pink-600;
+  @apply dark:focus-within:ring-pink-700;
+  @apply text-pink-700;
   @apply hover:text-pink-800;
   @apply dark:text-green-400;
   @apply dark:hover:text-green-200;

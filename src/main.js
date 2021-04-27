@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import "./index.css";
+import "virtual:windi.css";
 import { registerSW } from "virtual:pwa-register";
 
 registerSW();
