@@ -57,9 +57,9 @@
   @apply my-1;
   @apply bg-gray-400;
   @apply border-8;
-  @apply border-white;
+  @apply border-gray-50;
   @apply rounded-full;
-  @apply dark:border-black;
+  @apply dark:border-gray-900;
   @apply dark:bg-gray-600;
 }
 .event-headline {
@@ -94,20 +94,20 @@
   @apply items-center;
   @apply justify-center;
   @apply absolute;
-  @apply px-4;
-  @apply py-2;
+  @apply px-5;
+  @apply py-3;
   @apply rounded-full;
   @apply font-bold;
   @apply focus:outline-none;
   @apply focus-within:ring;
   @apply focus-within:ring-yellow-400;
   @apply dark:focus-within:ring-purple-600;
-  @apply text-white;
+  @apply text-gray-50;
   @apply bg-purple-600;
   @apply hover:bg-purple-800;
   @apply dark:bg-yellow-400;
   @apply dark:hover:bg-yellow-200;
-  @apply dark:text-black;
+  @apply dark:text-gray-900;
   @apply transition-all;
 }
 a {

@@ -39,14 +39,14 @@
   @apply focus-within:ring;
   @apply focus-within:ring-pink-400;
   @apply dark:focus-within:ring-indigo-600;
-  @apply text-black;
+  @apply text-gray-800;
   @apply bg-gray-100;
   @apply hover:bg-gray-200;
   @apply focus:bg-gray-200;
-  @apply dark:bg-gray-900;
-  @apply dark:hover:bg-gray-800;
-  @apply dark:focus:bg-gray-800;
-  @apply dark:text-white;
+  @apply dark:bg-gray-800;
+  @apply dark:hover:bg-gray-700;
+  @apply dark:focus:bg-gray-700;
+  @apply dark:text-gray-50;
   @apply transition-all;
 }
 .form-button {
@@ -58,12 +58,13 @@
   @apply focus-within:ring;
   @apply focus-within:ring-pink-400;
   @apply dark:focus-within:ring-indigo-600;
-  @apply text-white;
+  @apply text-gray-50;
   @apply bg-indigo-600;
   @apply hover:bg-indigo-800;
   @apply dark:bg-pink-400;
   @apply dark:hover:bg-pink-200;
-  @apply dark:text-black;
+  @apply dark:text-gray-900;
   @apply transition-all;
+  @apply cursor-pointer;
 }
 </style>
