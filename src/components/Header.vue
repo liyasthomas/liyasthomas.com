@@ -5,44 +5,36 @@
     <nav
       class="flex flex-col items-start space-y-4 md:(space-x-4 flex-row space-y-0)"
     >
-      <router-link to="/" class="nav-link" :title="t('button.home')">
+      <router-link to="/" class="nav-link">
         <span>{{ t("button.home") }}</span>
       </router-link>
 
-      <router-link
-        to="/timeline"
-        class="nav-link"
-        :title="t('button.timeline')"
-      >
+      <router-link to="/timeline" class="nav-link">
         <span>{{ t("button.timeline") }}</span>
       </router-link>
 
-      <router-link
-        to="/newsletter"
-        class="nav-link"
-        :title="t('button.newsletter')"
-      >
+      <router-link to="/works" class="nav-link">
+        <span>{{ t("button.works") }}</span>
+      </router-link>
+
+      <router-link to="/blog" class="nav-link">
+        <span>{{ t("button.blog") }}</span>
+      </router-link>
+
+      <router-link to="/newsletter" class="nav-link">
         <span>{{ t("button.newsletter") }}</span>
       </router-link>
 
-      <router-link to="/about" class="nav-link" :title="t('button.about')">
+      <router-link to="/about" class="nav-link">
         <span>{{ t("button.about") }}</span>
       </router-link>
     </nav>
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
-      <button
-        class="nav-link"
-        :title="t('button.toggle_dark')"
-        @click="toggleDark"
-      >
+      <button class="nav-link" @click="toggleDark">
         <heroicons-solid-moon v-if="isDark" />
         <heroicons-solid-sun v-else />
       </button>
-      <button
-        class="nav-link"
-        :title="t('button.toggle_langs')"
-        @click="toggleLocales"
-      >
+      <button class="nav-link" @click="toggleLocales">
         <heroicons-solid-translate />
       </button>
     </div>

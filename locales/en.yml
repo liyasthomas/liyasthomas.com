@@ -1,6 +1,9 @@
 button:
   about: About
   events: Events
+  works: Works
+  projects: Projects
+  blog: Blog
   timeline: Timeline
   newsletter: Newsletter
   back: Back
