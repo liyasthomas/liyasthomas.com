@@ -1,5 +1,5 @@
 ---
-title: Hello world
+title: Hello world - Blog - Liyas Thomas
 ---
 
 <h1 class="inline-flex mb-8 text-2xl font-bold">About blog</h1>

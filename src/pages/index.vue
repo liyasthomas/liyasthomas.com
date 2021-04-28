@@ -2,6 +2,11 @@
 import { ref } from "vue"
 import { useRouter } from "vue-router"
 import { useI18n } from "vue-i18n"
+import { useHead } from "@vueuse/head"
+
+useHead({
+  title: "Home - Liyas Thomas",
+})
 
 const name = ref("")
 
