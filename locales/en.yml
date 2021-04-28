@@ -1,6 +1,7 @@
 button:
   about: About
   events: Events
+  timeline: Timeline
   newsletter: Newsletter
   back: Back
   go: GO

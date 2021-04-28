@@ -7,11 +7,6 @@
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
   from = "/twitter"
   to = "https://twitter.com/liyasthomas"
   status = 301
@@ -40,6 +35,11 @@
   to = "https://calendly.com/liyasthomas/30m"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/manifest.webmanifest"

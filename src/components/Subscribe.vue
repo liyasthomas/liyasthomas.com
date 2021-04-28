@@ -6,7 +6,7 @@
       target="_blank"
       validate
     >
-      <label for="mce-EMAIL" class="inline-flex my-8 text-2xl font-bold">Subscribe</label>
+      <label for="mce-EMAIL" class="inline-flex mb-8 text-2xl font-bold">Subscribe</label>
       <div class="flex flex-col space-y-2 md:(space-x-2 space-y-0 flex-row)">
         <input name="EMAIL" id="mce-EMAIL" class="form-input" type="email" placeholder="E-mail" required />
         <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="form-button" />

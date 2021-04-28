@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col m-8">
+  <div class="flex flex-col my-8">
     <h1 class="text-4xl font-bold">Liyas Thomas</h1>
     <p class="mt-4 text-xl">
       Founder & CEO of

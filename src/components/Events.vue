@@ -81,7 +81,7 @@
   @apply h-0;
   @apply border-b;
   @apply border-dashed;
-  @apply m-8;
+  @apply my-12;
   @apply border-gray-200;
   @apply dark:border-gray-800;
 }

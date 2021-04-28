@@ -4,6 +4,6 @@
     src=".././assets/images/logo.webp"
     height="160"
     width="160"
-    class="m-8 rounded-full"
+    class="rounded-full"
   />
 </template>
