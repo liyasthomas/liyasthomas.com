@@ -11,5 +11,3 @@ function vitesse() {
   console.log(foo)
 }
 ```
-
-

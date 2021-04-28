@@ -21,16 +21,21 @@
     <meta name="twitter:image:alt" content="Liyas Thomas" />
     <meta name="twitter:site" content="@liyasthomas" />
     <meta property="twitter:title" content="Liyas Thomas" />
-    <meta property="twitter:description" content="Founder & CEO of Hoppscotch." />
+    <meta
+      property="twitter:description"
+      content="Founder & CEO of Hoppscotch."
+    />
   </head>
   <body class="text-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
     <div id="app"></div>
     <script>
       ;(function () {
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        const setting = localStorage.getItem('color-schema') || 'auto'
-        if (setting === 'dark' || (prefersDark && setting !== 'light'))
-          document.documentElement.classList.toggle('dark', true)
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+        const setting = localStorage.getItem("color-schema") || "auto"
+        if (setting === "dark" || (prefersDark && setting !== "light"))
+          document.documentElement.classList.toggle("dark", true)
       })()
     </script>
     <script type="module" src="/src/main.ts"></script>
