@@ -12,7 +12,7 @@
       >
         <div class="article-heading">
           <div class="article-indicator"></div>
-          <router-link :to="`/blog/${article.link}`" class="article-headline">
+          <router-link :to="`/blog/${article.slug}`" class="article-headline">
             <span class="article-date">{{
               new Intl.DateTimeFormat("en-US", {
                 year: "numeric",
@@ -113,15 +113,7 @@ a {
 </style>
 
 <script>
-const data = Object.entries(import.meta.globEager("../pages/blog/*.md"))
-  .map(([key]) => {
-    return {
-      date: new Date(key.slice(14).split("--")[0].replaceAll("-", " ")),
-      title: key.slice(14).split("--").pop().replaceAll("-", " ").split(".")[0],
-      link: key.slice(14).split(".")[0].toLowerCase(),
-    }
-  })
-  .sort((a, b) => b.date - a.date)
+import data from "../assets/data/articles"
 
 export default {
   setup() {
