@@ -16,14 +16,14 @@ specifiers:
   https-localhost: ^4.6.4
   markdown-it-prism: ^2.1.6
   nprogress: ^0.2.0
-  pnpm: ^6.2.2
+  pnpm: ^6.2.3
   prism-theme-vars: ^0.2.2
   typescript: ^4.2.4
   vite: 2.2.3
   vite-plugin-components: ^0.8.4
   vite-plugin-icons: ^0.5.0
   vite-plugin-md: ^0.6.3
-  vite-plugin-pages: 0.9.8
+  vite-plugin-pages: ^0.10.0
   vite-plugin-pwa: ^0.7.2
   vite-plugin-vue-layouts: ^0.2.2
   vite-plugin-windicss: 0.15.7
@@ -54,13 +54,13 @@ devDependencies:
   eslint: 7.25.0
   https-localhost: 4.6.4
   markdown-it-prism: 2.1.6
-  pnpm: 6.2.2
+  pnpm: 6.2.3
   typescript: 4.2.4
   vite: 2.2.3
   vite-plugin-components: 0.8.4_vite@2.2.3
   vite-plugin-icons: 0.5.0_68285259574601e84c8dff0f86e760ff
   vite-plugin-md: 0.6.3_vite@2.2.3
-  vite-plugin-pages: 0.9.8_8cd74be53f81ed683d32be064bcfe770
+  vite-plugin-pages: 0.10.0_8cd74be53f81ed683d32be064bcfe770
   vite-plugin-pwa: 0.7.2_vite@2.2.3
   vite-plugin-vue-layouts: 0.2.2_vite@2.2.3
   vite-plugin-windicss: 0.15.7_vite@2.2.3
@@ -4489,8 +4489,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/6.2.2:
-    resolution: {integrity: sha512-Gb8tXUDurgjYuJ8cJDReHVxlFyk6+Q0kN9j/UABiWrVQRiwCMCKeMplWnlwdeI9DvVnf3qwjkgEZdVHAL5gxVw==}
+  /pnpm/6.2.3:
+    resolution: {integrity: sha512-qYRrxYyN14tqeMGu7E3P+INXDiYbGojn5mitVfUxidO9OsSnTGSqT85nkslfKW8YfChlzFVN0XdG+1Tj86tKhA==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: true
@@ -5668,8 +5668,8 @@ packages:
       vite: 2.2.3
     dev: true
 
-  /vite-plugin-pages/0.9.8_8cd74be53f81ed683d32be064bcfe770:
-    resolution: {integrity: sha512-iXOkMzkFStmygwpRuICxFiDietIfGsfu6+54sDhlLZsOr4RJAxtZeDLQQcRdHNZi7mSzAphGzv4IaRdhhG/uNA==}
+  /vite-plugin-pages/0.10.0_8cd74be53f81ed683d32be064bcfe770:
+    resolution: {integrity: sha512-vAxH0RBaIoBEbJLT+YP9TjWK//aPb8w2r2fk+TLmvrKjDT/Y7F9ne/VYlay+U6jJNM9pHTOJldTamgbDgkSsCg==}
     peerDependencies:
       vite: ^2.0.0
       vue: ^3.0.0

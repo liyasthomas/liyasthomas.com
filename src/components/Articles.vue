@@ -94,20 +94,20 @@
   @apply rounded-lg;
   @apply font-bold;
   @apply text-gray-50;
-  @apply bg-purple-600;
+  @apply bg-green-600;
   @apply focus:outline-none;
-  @apply focus-within:(ring ring-yellow-400);
-  @apply hover:(bg-purple-800);
-  @apply dark:(text-gray-900 bg-yellow-400 focus-within:ring-purple-600 hover:bg-yellow-200);
+  @apply focus-within:(ring ring-cyan-400);
+  @apply hover:(bg-green-800);
+  @apply dark:(text-gray-900 bg-cyan-400 focus-within:ring-green-600 hover:bg-cyan-200);
   @apply transition-all;
 }
 a {
   @apply rounded-lg;
-  @apply text-purple-600;
+  @apply text-green-600;
   @apply focus:outline-none;
-  @apply focus-within:(ring ring-yellow-400);
-  @apply hover:(text-purple-800);
-  @apply dark:(text-yellow-400 focus-within:ring-purple-600 hover:text-yellow-200);
+  @apply focus-within:(ring ring-cyan-400);
+  @apply hover:(text-green-800);
+  @apply dark:(text-cyan-400 focus-within:ring-green-600 hover:text-cyan-200);
   @apply transition-all;
 }
 </style>
