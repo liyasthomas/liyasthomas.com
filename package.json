@@ -9,7 +9,7 @@
     "preview-https": "serve dist"
   },
   "dependencies": {
-    "@vueuse/core": "4.9.0",
+    "@vueuse/core": "^4.9.1",
     "@vueuse/head": "^0.5.1",
     "nprogress": "^0.2.0",
     "prism-theme-vars": "^0.2.2",
@@ -37,9 +37,9 @@
     "vite-plugin-icons": "^0.5.0",
     "vite-plugin-md": "^0.6.3",
     "vite-plugin-pages": "^0.10.0",
-    "vite-plugin-pwa": "^0.7.2",
+    "vite-plugin-pwa": "^0.7.3",
     "vite-plugin-vue-layouts": "^0.2.2",
-    "vite-plugin-windicss": "0.15.7",
-    "vite-ssg": "^0.9.2"
+    "vite-plugin-windicss": "^0.15.8",
+    "vite-ssg": "^0.9.3"
   }
 }

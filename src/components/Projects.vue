@@ -39,7 +39,8 @@
   @apply border;
   @apply border-gray-200;
   @apply rounded-lg;
-  @apply dark:(border-gray-800);
+  @apply hover:border-gray-300;
+  @apply dark:(border-gray-800 hover:border-gray-700);
   @apply transition-all;
 }
 .project-heading {

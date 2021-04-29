@@ -1,4 +1,4 @@
-@import './markdown.css';
+@import "./markdown.css";
 
 #nprogress {
   @apply pointer-events-none;
@@ -15,9 +15,7 @@
   @apply h-0.5;
 }
 
-.router-link-active {}
-
 .router-link-exact-active {
   @apply bg-blue-100;
-  @apply dark: bg-gray-800;
+  @apply dark: (bg-gray-800);
 }

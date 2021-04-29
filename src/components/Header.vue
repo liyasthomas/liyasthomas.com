@@ -30,11 +30,19 @@
       </router-link>
     </nav>
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
-      <button class="nav-link" @click="toggleDark">
+      <button
+        class="nav-link"
+        @click="toggleDark"
+        :aria-label="t('toggle_dark')"
+      >
         <heroicons-solid-moon v-if="isDark" />
         <heroicons-solid-sun v-else />
       </button>
-      <button class="nav-link" @click="toggleLocales">
+      <button
+        class="nav-link"
+        @click="toggleLocales"
+        :aria-label="t('toggle_langs')"
+      >
         <heroicons-solid-translate />
       </button>
     </div>
@@ -50,10 +58,10 @@
   @apply py-1;
   @apply font-bold;
   @apply rounded-lg;
-  @apply text-blue-600;
+  @apply text-blue-700;
   @apply focus:outline-none;
   @apply focus-within:(ring ring-indigo-400);
-  @apply hover:text-blue-700;
+  @apply hover:text-blue-800;
   @apply dark:(text-indigo-400 focus-within:ring-blue-600 hover:text-indigo-200);
   @apply transition-all;
 }

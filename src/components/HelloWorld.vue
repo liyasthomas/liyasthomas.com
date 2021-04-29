@@ -17,9 +17,9 @@ a {
   @apply rounded-lg;
   @apply text-pink-700;
   @apply focus:outline-none;
-  @apply focus-within:(ring ring-green-400);
+  @apply focus-within:(ring ring-lime-400);
   @apply hover:text-pink-800;
-  @apply dark:(text-green-400 focus-within:ring-pink-700 hover:text-green-200);
+  @apply dark:(text-lime-400 focus-within:ring-pink-700 hover:text-lime-200);
   @apply transition-all;
 }
 </style>
