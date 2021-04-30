@@ -33,17 +33,10 @@
       <button
         class="nav-link"
         @click="toggleDark"
-        :aria-label="t('toggle_dark')"
+        :aria-label="t('button.toggle_dark')"
       >
         <heroicons-solid-moon v-if="isDark" />
         <heroicons-solid-sun v-else />
-      </button>
-      <button
-        class="nav-link"
-        @click="toggleLocales"
-        :aria-label="t('toggle_langs')"
-      >
-        <heroicons-solid-translate />
       </button>
     </div>
   </header>
@@ -70,12 +63,5 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n"
 import { isDark, toggleDark } from "~/logic"
-
-const { t, availableLocales, locale } = useI18n()
-
-const toggleLocales = () => {
-  // change to some real logic
-  const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
+const { t } = useI18n()
 </script>

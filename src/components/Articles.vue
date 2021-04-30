@@ -84,9 +84,6 @@
   @apply dark:border-gray-800;
 }
 .more-article {
-  @apply flex;
-  @apply items-center;
-  @apply justify-center;
   @apply absolute;
   @apply px-4;
   @apply py-2;

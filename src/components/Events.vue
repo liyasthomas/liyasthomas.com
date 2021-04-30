@@ -90,9 +90,6 @@
   @apply dark:border-gray-800;
 }
 .more-event {
-  @apply flex;
-  @apply items-center;
-  @apply justify-center;
   @apply absolute;
   @apply px-4;
   @apply py-2;

@@ -1,5 +1,13 @@
 @import "./markdown.css";
 
+* {
+  @apply outline-none;
+}
+
+body {
+  @apply select-none;
+}
+
 #nprogress {
   @apply pointer-events-none;
 }
@@ -18,4 +26,10 @@
 .router-link-exact-active {
   @apply bg-blue-100;
   @apply dark: (bg-gray-800);
+}
+
+button {
+  @apply inline-flex;
+  @apply items-center;
+  @apply justify-center;
 }
