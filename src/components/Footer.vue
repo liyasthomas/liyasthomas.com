@@ -43,11 +43,11 @@ button {
   @apply px-2;
   @apply py-1;
   @apply rounded-lg;
-  @apply text-gray-400;
+  @apply text-gray-500;
   @apply focus:outline-none;
   @apply focus-within:(ring ring-gray-400);
-  @apply hover:text-gray-500;
-  @apply dark:(text-gray-500 focus-within:ring-gray-600 hover:text-gray-400);
+  @apply hover:text-gray-600;
+  @apply dark:(text-gray-400 focus-within:ring-gray-600 hover:text-gray-300);
   @apply transition-all;
 }
 </style>
