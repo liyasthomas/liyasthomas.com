@@ -1,24 +1,34 @@
 <template>
   <footer
-    class="flex flex-col items-start m-8 text-sm md:(flex-row items-center justify-between)"
+    class="flex flex-col m-8 text-sm md:(flex-row items-center justify-between)"
   >
     <nav
       class="flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row)"
     >
-      <a href="https://twitter.com/liyasthomas" target="_blank" rel="noopener"
+      <a
+        class="footer-link"
+        href="https://twitter.com/liyasthomas"
+        target="_blank"
+        rel="noopener"
         >Twitter</a
       >
       <a
+        class="footer-link"
         href="https://www.linkedin.com/in/liyasthomas"
         target="_blank"
         rel="noopener"
         >LinkedIn</a
       >
-      <a href="https://github.com/liyasthomas" target="_blank" rel="noopener"
+      <a
+        class="footer-link"
+        href="https://github.com/liyasthomas"
+        target="_blank"
+        rel="noopener"
         >GitHub</a
       >
-      <a href="mailto:hi@liyasthomas.com">E-mail</a>
+      <a class="footer-link" href="mailto:hi@liyasthomas.com">E-mail</a>
       <a
+        class="footer-link"
         href="https://calendly.com/liyasthomas/30m"
         target="_blank"
         rel="noopener"
@@ -27,7 +37,7 @@
     </nav>
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
       <button
-        class="nav-link"
+        class="footer-link"
         @click="toggleLocales"
         :aria-label="t('button.toggle_langs')"
       >
@@ -38,7 +48,7 @@
 </template>
 
 <style scoped>
-a,
+.footer-link,
 button {
   @apply px-2;
   @apply py-1;

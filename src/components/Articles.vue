@@ -12,7 +12,10 @@
       >
         <div class="article-heading">
           <div class="article-indicator"></div>
-          <router-link :to="`/blog/${article.slug}`" class="article-headline">
+          <router-link
+            :to="`/blog/${article.slug}`"
+            class="article-link article-headline"
+          >
             <span class="article-date">{{
               new Intl.DateTimeFormat("en-US", {
                 year: "numeric",
@@ -98,7 +101,7 @@
   @apply dark:(text-gray-900 bg-cyan-400 focus-within:ring-green-600 hover:bg-cyan-200);
   @apply transition-all;
 }
-a {
+.article-link {
   @apply rounded-lg;
   @apply text-green-600;
   @apply focus:outline-none;

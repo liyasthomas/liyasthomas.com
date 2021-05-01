@@ -18,6 +18,7 @@
             target="_blank"
             rel="noopener"
             class="event-headline"
+            :class="{ 'event-link': event.link }"
           >
             <span class="event-date">{{
               new Intl.DateTimeFormat("en-US", {
@@ -104,7 +105,7 @@
   @apply dark:(text-gray-900 bg-yellow-400 focus-within:ring-purple-600 hover:bg-yellow-200);
   @apply transition-all;
 }
-a {
+.event-link {
   @apply rounded-lg;
   @apply text-purple-600;
   @apply focus:outline-none;

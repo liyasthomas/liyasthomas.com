@@ -11,6 +11,7 @@
           target="_blank"
           rel="noopener"
           class="project-item"
+          :class="{ 'project-link': project.link }"
         >
           <div class="project-heading">
             <div class="project-headline">
@@ -79,7 +80,7 @@
   @apply dark:(text-gray-900 bg-teal-400 focus-within:ring-fuchsia-600 hover:bg-teal-200);
   @apply transition-all;
 }
-a {
+.project-link {
   @apply rounded-lg;
   @apply text-fuchsia-600;
   @apply focus:outline-none;

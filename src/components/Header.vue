@@ -5,33 +5,33 @@
     <nav
       class="flex flex-col items-start space-y-4 md:(space-x-4 flex-row space-y-0)"
     >
-      <router-link to="/" class="nav-link">
+      <router-link to="/" class="header-link">
         <span>{{ t("button.home") }}</span>
       </router-link>
 
-      <router-link to="/timeline" class="nav-link">
+      <router-link to="/timeline" class="header-link">
         <span>{{ t("button.timeline") }}</span>
       </router-link>
 
-      <router-link to="/works" class="nav-link">
+      <router-link to="/works" class="header-link">
         <span>{{ t("button.works") }}</span>
       </router-link>
 
-      <router-link to="/blog" class="nav-link">
+      <router-link to="/blog" class="header-link">
         <span>{{ t("button.blog") }}</span>
       </router-link>
 
-      <router-link to="/newsletter" class="nav-link">
+      <router-link to="/newsletter" class="header-link">
         <span>{{ t("button.newsletter") }}</span>
       </router-link>
 
-      <router-link to="/about" class="nav-link">
+      <router-link to="/about" class="header-link">
         <span>{{ t("button.about") }}</span>
       </router-link>
     </nav>
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
       <button
-        class="nav-link"
+        class="header-link"
         @click="toggleDark"
         :aria-label="t('button.toggle_dark')"
       >
@@ -43,7 +43,7 @@
 </template>
 
 <style scoped>
-.nav-link {
+.header-link {
   @apply inline-flex;
   @apply items-center;
   @apply justify-center;

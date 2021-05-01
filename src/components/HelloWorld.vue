@@ -3,7 +3,11 @@
     <h1 class="text-4xl font-bold">Liyas Thomas</h1>
     <p class="mt-4 text-xl">
       Founder & CEO of
-      <a href="https://hoppscotch.io" target="_blank" rel="noopener"
+      <a
+        class="app-link"
+        href="https://hoppscotch.io"
+        target="_blank"
+        rel="noopener"
         >Hoppscotch</a
       >
     </p>
@@ -11,7 +15,7 @@
 </template>
 
 <style scoped>
-a {
+.app-link {
   @apply px-2;
   @apply py-1;
   @apply rounded-lg;
