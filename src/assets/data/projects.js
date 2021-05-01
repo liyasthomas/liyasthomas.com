@@ -35,5 +35,9 @@ export default [
     description: "A simple and clean banner generator",
     link: "https://github.com/liyasthomas/banner",
   },
-  { title: "More", description: "", link: "https://github.com/liyasthomas" },
+  {
+    title: `More \xa0 ↗︎`,
+    description: "github.com/liyasthomas",
+    link: "https://github.com/liyasthomas",
+  },
 ]
