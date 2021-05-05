@@ -112,19 +112,9 @@
 }
 </style>
 
-<script>
-import data from "../assets/data/articles"
+<script setup lang="ts">
+import articles from "../assets/data/articles"
+import { ref } from "vue"
 
-export default {
-  setup() {
-    return {
-      articles: data,
-    }
-  },
-  data() {
-    return {
-      articleCount: 5,
-    }
-  },
-}
+const articleCount = ref(5)
 </script>

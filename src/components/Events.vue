@@ -116,19 +116,9 @@
 }
 </style>
 
-<script>
-import data from "../assets/data/timeline"
+<script setup lang="ts">
+import timeline from "../assets/data/timeline"
+import { ref } from "vue"
 
-export default {
-  setup() {
-    return {
-      timeline: data,
-    }
-  },
-  data() {
-    return {
-      eventCount: 5,
-    }
-  },
-}
+const eventCount = ref(5)
 </script>

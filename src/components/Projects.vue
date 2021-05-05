@@ -91,19 +91,9 @@
 }
 </style>
 
-<script>
-import data from "../assets/data/projects"
+<script setup lang="ts">
+import projects from "../assets/data/projects"
+import { ref } from "vue"
 
-export default {
-  setup() {
-    return {
-      projects: data,
-    }
-  },
-  data() {
-    return {
-      projectCount: 6,
-    }
-  },
-}
+const projectCount = ref(6)
 </script>
