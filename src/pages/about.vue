@@ -73,11 +73,11 @@ useHead({
   title: "About - Liyas Thomas",
 })
 
-const form = ref({
+const form = {
   name: "",
   email: "",
   message: "",
-})
+}
 
 const encode = (data) =>
   Object.keys(data)
@@ -90,7 +90,13 @@ const handleSubmit = () => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({ "form-name": "contact", ...form }),
   })
-    .then(() => alert("Thank you! Your message has been successfully sent."))
+    .then((response) => {
+      if (response.ok) {
+        alert("Thank you! Your message has been successfully sent.")
+      } else {
+        throw new Error("Something went wrong")
+      }
+    })
     .catch((error) => alert(error))
 }
 </script>
