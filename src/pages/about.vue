@@ -1,29 +1,6 @@
 <template>
   <h1 class="inline-flex mb-8 text-2xl font-bold">{{ t("button.about") }}</h1>
-  <form name="contact" method="POST" data-netlify="true">
-    <p>
-      <label>Your Name: <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Your Email: <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <label
-        >Your Role:
-        <select name="role[]" multiple>
-          <option value="leader">Leader</option>
-          <option value="follower">Follower</option>
-        </select></label
-      >
-    </p>
-    <p>
-      <label>Message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
-  <form>
+  <form name="contact" data-netlify="true">
     <div class="flex flex-col space-y-2 max-w-sm">
       <input
         type="text"
@@ -65,9 +42,9 @@
   @apply text-gray-800;
   @apply bg-gray-100;
   @apply focus:(outline-none bg-gray-200);
-  @apply focus-within:(ring ring-pink-400);
+  @apply focus-within:(ring ring-orange-400);
   @apply hover:bg-gray-200;
-  @apply dark:(text-gray-50 bg-gray-800 focus:bg-gray-700 focus-within:ring-indigo-600 hover:bg-gray-700);
+  @apply dark:(text-gray-50 bg-gray-800 focus:bg-gray-700 focus-within:ring-violet-600 hover:bg-gray-700);
   @apply transition-all;
 }
 .form-button {
@@ -76,11 +53,11 @@
   @apply rounded-lg;
   @apply font-bold;
   @apply text-gray-50;
-  @apply bg-indigo-600;
+  @apply bg-violet-600;
   @apply focus:outline-none;
-  @apply focus-within:(ring ring-pink-400);
-  @apply hover:bg-indigo-800;
-  @apply dark:(text-gray-900 bg-pink-400 focus-within:ring-indigo-600 hover:bg-pink-200);
+  @apply focus-within:(ring ring-orange-400);
+  @apply hover:bg-violet-800;
+  @apply dark:(text-gray-900 bg-orange-400 focus-within:ring-violet-600 hover:bg-orange-200);
   @apply transition-all;
   @apply cursor-pointer;
 }
