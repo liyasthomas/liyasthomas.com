@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite --port 3333 --open",
-    "build": "cross-env NODE_ENV=production vite-ssg build",
+    "dev": "vite",
+    "build": "vite-ssg build",
     "preview": "vite preview",
     "preview-https": "serve dist"
   },
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.6.4",
-    "@iconify/json": "^1.1.338",
+    "@iconify/json": "^1.1.339",
     "@intlify/vite-plugin-vue-i18n": "^2.1.2",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
@@ -35,7 +35,7 @@
     "vite-plugin-components": "^0.8.4",
     "vite-plugin-icons": "^0.5.0",
     "vite-plugin-md": "^0.6.3",
-    "vite-plugin-pages": "^0.11.0",
+    "vite-plugin-pages": "^0.11.1",
     "vite-plugin-pwa": "^0.7.3",
     "vite-plugin-vue-layouts": "^0.2.2",
     "vite-plugin-windicss": "^0.15.10",
