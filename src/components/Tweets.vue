@@ -31,7 +31,7 @@
 </template>
 
 <style scoped>
-blockquote.twitter-tweet {
+.twitter-tweet {
   @apply flex;
   @apply flex-col;
   @apply items-start;
