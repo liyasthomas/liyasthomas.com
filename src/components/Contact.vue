@@ -1,31 +1,31 @@
 <template>
   <h1 class="inline-flex mb-8 text-2xl font-bold">{{ t("button.contact") }}</h1>
   <form
-    @submit.prevent="handleSubmit"
     name="contact"
     data-netlify="true"
     validate
+    @submit.prevent="handleSubmit"
   >
     <div class="flex flex-col space-y-2 max-w-sm">
       <input
+        v-model="form.name"
         type="text"
         name="name"
-        v-model="form.name"
         class="form-input"
         placeholder="Name"
         required
       />
       <input
+        v-model="form.email"
         class="form-input"
         type="email"
         name="email"
-        v-model="form.email"
         placeholder="E-mail"
         required
       />
       <textarea
-        name="message"
         v-model="form.message"
+        name="message"
         rows="4"
         class="form-input"
         placeholder="Message"
@@ -53,6 +53,7 @@
   @apply dark:(text-gray-50 bg-gray-800 focus:bg-gray-700 focus-within:ring-violet-600 hover:bg-gray-700);
   @apply transition-all;
 }
+
 .form-button {
   @apply px-5;
   @apply py-3;

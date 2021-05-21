@@ -1,9 +1,28 @@
 <template>
   <header
-    class="flex bg-gray-50 dark:bg-gray-900 top-0 flex-col p-8 z-1 md:(sticky flex-row items-center justify-between)"
+    class="
+      flex
+      bg-gray-50
+      dark:bg-gray-900
+      top-0
+      flex-col
+      p-8
+      z-1
+      md:(sticky
+      flex-row
+      items-center
+      justify-between)
+    "
   >
     <nav
-      class="flex flex-col items-start space-y-4 md:(space-x-4 flex-row space-y-0)"
+      class="
+        flex flex-col
+        items-start
+        space-y-4
+        md:(space-x-4
+        flex-row
+        space-y-0)
+      "
     >
       <router-link to="/" class="header-link">
         <span>{{ t("button.home") }}</span>
@@ -32,8 +51,8 @@
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
       <button
         class="header-link"
-        @click="toggleDark"
         :aria-label="t('button.toggle_dark')"
+        @click="toggleDark"
       >
         <heroicons-solid-moon v-if="isDark" />
         <heroicons-solid-sun v-else />

@@ -11,8 +11,8 @@
       >
       <div class="flex flex-col space-y-2 md:(space-x-2 space-y-0 flex-row)">
         <input
-          name="EMAIL"
           id="mce-EMAIL"
+          name="EMAIL"
           class="form-input"
           type="email"
           placeholder="E-mail"
@@ -46,6 +46,7 @@
   @apply dark:(text-gray-50 bg-gray-800 focus:bg-gray-700 focus-within:ring-indigo-600 hover:bg-gray-700);
   @apply transition-all;
 }
+
 .form-button {
   @apply px-5;
   @apply py-3;

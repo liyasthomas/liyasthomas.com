@@ -3,7 +3,14 @@
     class="flex flex-col m-8 text-sm md:(flex-row items-center justify-between)"
   >
     <nav
-      class="flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row)"
+      class="
+        flex flex-col
+        items-start
+        space-y-4
+        md:(space-x-4
+        space-y-0
+        flex-row)
+      "
     >
       <a
         class="footer-link"
@@ -38,8 +45,8 @@
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
       <button
         class="footer-link"
-        @click="toggleLocales"
         :aria-label="t('button.toggle_langs')"
+        @click="toggleLocales"
       >
         <heroicons-solid-translate />
       </button>

@@ -14,17 +14,17 @@ import Prism from "markdown-it-prism"
 export default defineConfig({
   resolve: {
     alias: {
-      "~/": `${path.resolve(__dirname, "src")}/`
-    }
+      "~/": `${path.resolve(__dirname, "src")}/`,
+    },
   },
   plugins: [
     Vue({
-      include: [/\.vue$/, /\.md$/]
+      include: [/\.vue$/, /\.md$/],
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
-      extensions: ["vue", "md"]
+      extensions: ["vue", "md"],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -37,7 +37,7 @@ export default defineConfig({
       markdownItSetup(md) {
         // https://prismjs.com/
         md.use(Prism)
-      }
+      },
     }),
 
     // https://github.com/antfu/vite-plugin-components
@@ -52,10 +52,10 @@ export default defineConfig({
       customComponentResolvers: [
         // https://github.com/antfu/vite-plugin-icons
         ViteIconsResolver({
-          componentPrefix: ""
+          componentPrefix: "",
           // enabledCollections: ['carbon']
-        })
-      ]
+        }),
+      ],
     }),
 
     // https://github.com/antfu/vite-plugin-icons
@@ -74,14 +74,14 @@ export default defineConfig({
           {
             src: "/images/icons-192.png",
             type: "image/png",
-            sizes: "192x192"
+            sizes: "192x192",
           },
           {
             src: "/images/icons-512.png",
             type: "image/png",
             sizes: "512x512",
-            purpose: "any maskable"
-          }
+            purpose: "any maskable",
+          },
         ],
         start_url: "/?source=pwa",
         background_color: "#ffffff",
@@ -94,14 +94,14 @@ export default defineConfig({
             short_name: "Twitter",
             description: "View my Twitter profile",
             url: "/twitter",
-            icons: [{ src: "/images/twitter.png", sizes: "96x96" }]
+            icons: [{ src: "/images/twitter.png", sizes: "96x96" }],
           },
           {
             name: "LinkedIn",
             short_name: "LinkedIn",
             description: "View my LinkedIn profile",
             url: "/linkedin",
-            icons: [{ src: "/images/linkedin.png", sizes: "96x96" }]
+            icons: [{ src: "/images/linkedin.png", sizes: "96x96" }],
           },
           // {
           //   name: "GitHub",
@@ -115,45 +115,45 @@ export default defineConfig({
             short_name: "E-mail",
             description: "Send me an E-mail",
             url: "/email",
-            icons: [{ src: "/images/email.png", sizes: "96x96" }]
+            icons: [{ src: "/images/email.png", sizes: "96x96" }],
           },
           {
             name: "Calendar",
             short_name: "Calendar",
             description: "Choose a time slot to have a chat with me",
             url: "/calendar",
-            icons: [{ src: "/images/calendar.png", sizes: "96x96" }]
-          }
+            icons: [{ src: "/images/calendar.png", sizes: "96x96" }],
+          },
         ],
         description: "Founder & CEO of Hoppscotch",
         screenshots: [
           {
             src: "/images/screenshot1.png",
             type: "image/png",
-            sizes: "540x720"
+            sizes: "540x720",
           },
           {
             src: "/images/screenshot2.png",
             type: "image/png",
-            sizes: "540x720"
-          }
-        ]
-      }
+            sizes: "540x720",
+          },
+        ],
+      },
     }),
 
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({
-      include: [path.resolve(__dirname, "locales/**")]
-    })
+      include: [path.resolve(__dirname, "locales/**")],
+    }),
   ],
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
     script: "async",
-    formatting: "minify"
+    formatting: "minify",
   },
 
   optimizeDeps: {
     include: ["vue", "vue-router", "@vueuse/core"],
-    exclude: ["vue-demi"]
-  }
+    exclude: ["vue-demi"],
+  },
 })

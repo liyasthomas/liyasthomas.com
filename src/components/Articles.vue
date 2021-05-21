@@ -1,8 +1,14 @@
 <template>
   <div class="relative flex flex-col">
     <div
-      class="absolute border-r-2 border-gray-200 bottom-1 top-1 dark:border-gray-800"
-      style="z-index: -1; left: 15px"
+      class="
+        absolute
+        border-r-2 border-gray-200
+        bottom-1
+        top-1
+        dark:border-gray-800
+      "
+      style="z-index: -1; left: 15px;"
     ></div>
     <ul class="flex flex-col justify-end space-y-10 md:space-y-8">
       <li
@@ -43,9 +49,11 @@
   @apply flex;
   @apply flex-col;
 }
+
 .article-heading {
   @apply flex;
 }
+
 .article-indicator {
   @apply flex;
   @apply flex-shrink-0;
@@ -58,6 +66,7 @@
   @apply rounded-full;
   @apply dark:(border-gray-900 bg-gray-600);
 }
+
 .article-headline {
   @apply px-2;
   @apply py-1;
@@ -65,15 +74,18 @@
   @apply my-1;
   @apply font-medium;
 }
+
 .article-description {
   @apply px-2;
   @apply ml-12;
   @apply text-gray-500;
   @apply dark:text-gray-400;
 }
+
 .article-divider {
   @apply mx-2;
 }
+
 .more-container {
   @apply flex;
   @apply items-center;
@@ -86,6 +98,7 @@
   @apply border-gray-200;
   @apply dark:border-gray-800;
 }
+
 .more-article {
   @apply absolute;
   @apply px-4;
@@ -101,6 +114,7 @@
   @apply dark:(text-gray-900 bg-cyan-400 focus-within:ring-green-600 hover:bg-cyan-200);
   @apply transition-all;
 }
+
 .article-link {
   @apply rounded-lg;
   @apply text-green-600;
