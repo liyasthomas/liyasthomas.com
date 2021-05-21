@@ -4,8 +4,7 @@ export default [
     date: "26 March 2021",
     title: "Spoke at GitHub Satellite India",
     description: "Journey of a project made in India: Hoppscotch.",
-    link:
-      "https://githubsatellite.com/sessions/journey-of-a-project-made-in-india-hoppscotch",
+    link: "https://githubsatellite.com/sessions/journey-of-a-project-made-in-india-hoppscotch",
   },
   {
     date: "20 March 2021",
@@ -17,15 +16,13 @@ export default [
     date: "24 February 2021",
     title: "Won Hashnode + AWS Amplify Hackathon",
     description: "Project Savvy.",
-    link:
-      "https://liyasthomas.hashnode.dev/savvy-build-better-products-with-customer-feedback",
+    link: "https://liyasthomas.hashnode.dev/savvy-build-better-products-with-customer-feedback",
   },
   {
     date: "20 January 2021",
     title: "Won Hashnode + Vercel Hackathon",
     description: "Project ebb.",
-    link:
-      "https://liyasthomas.hashnode.dev/ebb-feel-life-again-from-a-new-perspective",
+    link: "https://liyasthomas.hashnode.dev/ebb-feel-life-again-from-a-new-perspective",
   },
   {
     date: "28 December 2020",
@@ -37,8 +34,7 @@ export default [
     date: "27 November 2020",
     title: "10,000+ GitHub stars for Hoppscotch",
     description: "",
-    link:
-      "https://dev.to/liyasthomas/celebrating-10-000-stars-on-github-together-4ilg",
+    link: "https://dev.to/liyasthomas/celebrating-10-000-stars-on-github-together-4ilg",
   },
   {
     date: "31 October 2020",
@@ -56,8 +52,7 @@ export default [
     date: "16 October 2020",
     title: "Spoke at GitHub Open Source Friday",
     description: "",
-    link:
-      "https://dev.to/github/to-be-successful-as-a-developer-you-need-be-consistent-30ob",
+    link: "https://dev.to/github/to-be-successful-as-a-developer-you-need-be-consistent-30ob",
   },
   {
     date: "6 October 2020",
@@ -87,8 +82,7 @@ export default [
     date: "25 June 2020",
     title: "Postwoman won Tyk side project fund",
     description: "",
-    link:
-      "https://tyk.io/an-api-request-building-side-project-postwoman-io-sounds-like-a-winner-to-the-tyk-team",
+    link: "https://tyk.io/an-api-request-building-side-project-postwoman-io-sounds-like-a-winner-to-the-tyk-team",
   },
   {
     date: "10 October 2019",
@@ -133,4 +127,4 @@ export default [
     link: "",
   },
   { date: "12 July 1996", title: "Born", description: "", link: "" },
-];
+]

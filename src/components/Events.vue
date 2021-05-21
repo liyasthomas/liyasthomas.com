@@ -8,7 +8,7 @@
         top-1
         dark:border-gray-800
       "
-      style="z-index: -1; left: 15px;"
+      style="z-index: -1; left: 15px"
     ></div>
     <ul class="flex flex-col justify-end space-y-10 md:space-y-8">
       <li
