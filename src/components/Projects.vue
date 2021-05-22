@@ -30,6 +30,13 @@
   </div>
 </template>
 
+<script setup lang="ts">
+import projects from "../assets/data/projects"
+import { ref } from "vue"
+
+const projectCount = ref(6)
+</script>
+
 <style scoped>
 .project-item {
   @apply flex;
@@ -44,17 +51,21 @@
   @apply dark:(border-gray-800 hover:border-gray-700);
   @apply transition-all;
 }
+
 .project-heading {
   @apply flex;
 }
+
 .project-headline {
   @apply mb-2;
   @apply font-medium;
 }
+
 .project-description {
   @apply text-gray-500;
   @apply dark:text-gray-400;
 }
+
 .more-container {
   @apply flex;
   @apply items-center;
@@ -66,6 +77,7 @@
   @apply border-gray-200;
   @apply dark:border-gray-800;
 }
+
 .more-project {
   @apply absolute;
   @apply px-4;
@@ -80,6 +92,7 @@
   @apply dark:(text-gray-900 bg-teal-400 focus-within:ring-fuchsia-600 hover:bg-teal-200);
   @apply transition-all;
 }
+
 .project-link {
   @apply rounded-lg;
   @apply text-fuchsia-600;
@@ -90,10 +103,3 @@
   @apply transition-all;
 }
 </style>
-
-<script setup lang="ts">
-import projects from "../assets/data/projects"
-import { ref } from "vue"
-
-const projectCount = ref(6)
-</script>

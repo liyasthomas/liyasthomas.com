@@ -48,6 +48,13 @@
   </div>
 </template>
 
+<script setup lang="ts">
+import timeline from "../assets/data/timeline"
+import { ref } from "vue"
+
+const eventCount = ref(5)
+</script>
+
 <style scoped>
 .event-item {
   @apply flex;
@@ -129,10 +136,3 @@
   @apply transition-all;
 }
 </style>
-
-<script setup lang="ts">
-import timeline from "../assets/data/timeline"
-import { ref } from "vue"
-
-const eventCount = ref(5)
-</script>

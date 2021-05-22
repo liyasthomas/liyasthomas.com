@@ -43,13 +43,14 @@
       >
     </nav>
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
-      <button
+      <a
         class="footer-link"
-        :aria-label="t('button.toggle_langs')"
-        @click="toggleLocales"
+        href="https://github.com/liyasthomas/liyasthomas.com"
+        target="_blank"
+        rel="noopener"
       >
-        <heroicons-solid-translate />
-      </button>
+        <bi-github />
+      </a>
     </div>
   </footer>
 </template>
@@ -57,6 +58,9 @@
 <style scoped>
 .footer-link,
 button {
+  @apply inline-flex;
+  @apply items-center;
+  @apply justify-center;
   @apply px-2;
   @apply py-1;
   @apply rounded-lg;
@@ -68,14 +72,3 @@ button {
   @apply transition-all;
 }
 </style>
-
-<script setup lang="ts">
-import { useI18n } from "vue-i18n"
-const { t, availableLocales, locale } = useI18n()
-
-const toggleLocales = () => {
-  // change to some real logic
-  const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
-</script>

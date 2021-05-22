@@ -25,33 +25,33 @@
       "
     >
       <router-link to="/" class="header-link">
-        <span>{{ t("button.home") }}</span>
+        <span>Home</span>
       </router-link>
 
       <router-link to="/timeline" class="header-link">
-        <span>{{ t("button.timeline") }}</span>
+        <span>Timeline</span>
       </router-link>
 
       <router-link to="/works" class="header-link">
-        <span>{{ t("button.works") }}</span>
+        <span>Works</span>
       </router-link>
 
       <router-link to="/blog" class="header-link">
-        <span>{{ t("button.blog") }}</span>
+        <span>Blog</span>
       </router-link>
 
       <router-link to="/newsletter" class="header-link">
-        <span>{{ t("button.newsletter") }}</span>
+        <span>Newsletter</span>
       </router-link>
 
       <router-link to="/about" class="header-link">
-        <span>{{ t("button.about") }}</span>
+        <span>about</span>
       </router-link>
     </nav>
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
       <button
         class="header-link"
-        :aria-label="t('button.toggle_dark')"
+        aria-label="Toggle dark mode"
         @click="toggleDark"
       >
         <heroicons-solid-moon v-if="isDark" />
@@ -60,6 +60,10 @@
     </div>
   </header>
 </template>
+
+<script setup lang="ts">
+import { isDark, toggleDark } from "~/logic"
+</script>
 
 <style scoped>
 .header-link {
@@ -78,9 +82,3 @@
   @apply transition-all;
 }
 </style>
-
-<script setup lang="ts">
-import { useI18n } from "vue-i18n"
-import { isDark, toggleDark } from "~/logic"
-const { t } = useI18n()
-</script>

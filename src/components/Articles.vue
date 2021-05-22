@@ -8,7 +8,7 @@
         top-1
         dark:border-gray-800
       "
-      style="z-index: -1; left: 15px"
+      style="z-index: -1; left: 15px;"
     ></div>
     <ul class="flex flex-col justify-end space-y-10 md:space-y-8">
       <li
@@ -43,6 +43,13 @@
     <button class="more-article" @click="articleCount += 5">Show more</button>
   </div>
 </template>
+
+<script setup lang="ts">
+import articles from "../assets/data/articles"
+import { ref } from "vue"
+
+const articleCount = ref(5)
+</script>
 
 <style scoped>
 .article-item {
@@ -125,10 +132,3 @@
   @apply transition-all;
 }
 </style>
-
-<script setup lang="ts">
-import articles from "../assets/data/articles"
-import { ref } from "vue"
-
-const articleCount = ref(5)
-</script>

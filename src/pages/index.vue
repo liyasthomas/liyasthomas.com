@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { useRouter } from "vue-router"
-import { useI18n } from "vue-i18n"
 import { useHead } from "@vueuse/head"
 
 useHead({
@@ -14,8 +13,6 @@ const router = useRouter()
 const go = () => {
   if (name.value) router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
-
-const { t } = useI18n()
 </script>
 
 <template>

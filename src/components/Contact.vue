@@ -1,5 +1,5 @@
 <template>
-  <h1 class="inline-flex mb-8 text-2xl font-bold">{{ t("button.contact") }}</h1>
+  <h1 class="inline-flex mb-8 text-2xl font-bold">Contact</h1>
   <form
     name="contact"
     data-netlify="true"
@@ -39,6 +39,35 @@
   </form>
 </template>
 
+<script setup lang="ts">
+const form = {
+  name: "",
+  email: "",
+  message: "",
+}
+
+const encode = (data) =>
+  Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join("&")
+
+const handleSubmit = () => {
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({ "form-name": "contact", ...form }),
+  })
+    .then((response) => {
+      if (response.ok) {
+        alert("Thank you! Your message has been successfully sent.")
+      } else {
+        throw new Error("Something went wrong")
+      }
+    })
+    .catch((error) => alert(error))
+}
+</script>
+
 <style scoped>
 .form-input {
   @apply flex;
@@ -69,35 +98,3 @@
   @apply cursor-pointer;
 }
 </style>
-
-<script setup lang="ts">
-import { useI18n } from "vue-i18n"
-const { t } = useI18n()
-
-const form = {
-  name: "",
-  email: "",
-  message: "",
-}
-
-const encode = (data) =>
-  Object.keys(data)
-    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join("&")
-
-const handleSubmit = () => {
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({ "form-name": "contact", ...form }),
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert("Thank you! Your message has been successfully sent.")
-      } else {
-        throw new Error("Something went wrong")
-      }
-    })
-    .catch((error) => alert(error))
-}
-</script>

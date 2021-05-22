@@ -30,6 +30,18 @@
   </div>
 </template>
 
+<script setup lang="ts">
+import tweets from "../assets/data/tweets"
+import { onMounted } from "vue"
+import { isDark } from "~/logic"
+
+onMounted(() => {
+  let externalScript = document.createElement("script")
+  externalScript.setAttribute("src", "https://platform.twitter.com/widgets.js")
+  document.head.appendChild(externalScript)
+})
+</script>
+
 <style scoped>
 .twitter-tweet {
   @apply flex;
@@ -44,15 +56,3 @@
   @apply dark:(border-gray-800 bg-gray-800);
 }
 </style>
-
-<script setup lang="ts">
-import tweets from "../assets/data/tweets"
-import { onMounted } from "vue"
-import { isDark } from "~/logic"
-
-onMounted(() => {
-  let externalScript = document.createElement("script")
-  externalScript.setAttribute("src", "https://platform.twitter.com/widgets.js")
-  document.head.appendChild(externalScript)
-})
-</script>
