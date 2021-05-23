@@ -45,7 +45,7 @@
       </router-link>
 
       <router-link to="/about" class="header-link">
-        <span>about</span>
+        <span>About</span>
       </router-link>
     </nav>
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">

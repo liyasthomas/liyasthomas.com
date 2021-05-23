@@ -40,6 +40,8 @@
 </template>
 
 <script setup lang="ts">
+import NProgress from "nprogress"
+
 const form = {
   name: "",
   email: "",
@@ -52,6 +54,7 @@ const encode = (data) =>
     .join("&")
 
 const handleSubmit = () => {
+  NProgress.start()
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -65,6 +68,9 @@ const handleSubmit = () => {
       }
     })
     .catch((error) => alert(error))
+    .finally(() => {
+      NProgress.done()
+    })
 }
 </script>
 
