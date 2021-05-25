@@ -1,40 +1,63 @@
 <template>
-  <div class="flex flex-col">
-    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-      <li
-        v-for="(project, index) in projects.slice(0, projectCount)"
-        :key="`project-${index}`"
-      >
-        <component
-          :is="project.link ? 'a' : 'div'"
-          :href="project.link"
-          target="_blank"
-          rel="noopener"
-          class="project-item"
-          :class="{ 'project-link': project.link }"
+  <div>
+    <h1 class="inline-flex mb-8 text-2xl font-bold">Projects</h1>
+    <div class="flex flex-col">
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <li
+          v-for="(project, index) in projects.slice(
+            0,
+            props.home ? props.projectCount : projectCount
+          )"
+          :key="`project-${index}`"
         >
-          <div class="project-heading">
-            <div class="project-headline">
-              <span class="project-title">{{ project.title }}</span>
+          <component
+            :is="project.link ? 'a' : 'div'"
+            :href="project.link"
+            target="_blank"
+            rel="noopener"
+            class="project-item"
+            :class="{ 'project-link': project.link }"
+          >
+            <div class="project-heading">
+              <div class="project-headline">
+                <span class="project-title">{{ project.title }}</span>
+              </div>
             </div>
-          </div>
-          <div v-if="project.description" class="project-description">
-            {{ project.description }}
-          </div>
-        </component>
-      </li>
-    </ul>
-  </div>
-  <div v-if="projectCount < projects.length" class="more-container">
-    <button class="more-project" @click="projectCount += 6">Show more</button>
+            <div v-if="project.description" class="project-description">
+              {{ project.description }}
+            </div>
+          </component>
+        </li>
+      </ul>
+    </div>
+    <div v-if="projectCount < projects.length" class="more-container">
+      <router-link v-if="props.home" to="/works" class="more-project">
+        View all
+      </router-link>
+      <button v-else class="more-project" @click="projectCount += 6">
+        Show more
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import projects from "../assets/data/projects"
 import { ref } from "vue"
+import { defineProps } from "vue"
 
 const projectCount = ref(6)
+
+const props = defineProps({
+  projectCount: {
+    type: Number,
+    default: 4,
+  },
+  home: {
+    type: Boolean,
+    default: false,
+  },
+})
 </script>
 
 <style scoped>

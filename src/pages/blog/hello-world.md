@@ -2,6 +2,7 @@
 title: Hello world - Blog - Liyas Thomas
 ---
 
+<div>
 <h1 class="inline-flex mb-8 text-2xl font-bold">Hello world</h1>
 
 Some text
@@ -13,3 +14,5 @@ function vitesse() {
   console.log(foo)
 }
 ```
+
+</div>

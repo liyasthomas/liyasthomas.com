@@ -1,6 +1,7 @@
 <template>
-  <h1 class="inline-flex mb-8 text-2xl font-bold">Projects</h1>
-  <Projects />
+  <div>
+    <Projects />
+  </div>
 </template>
 
 <script setup lang="ts">

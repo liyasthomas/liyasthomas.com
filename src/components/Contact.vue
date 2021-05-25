@@ -1,42 +1,44 @@
 <template>
-  <h1 class="inline-flex mb-8 text-2xl font-bold">Contact</h1>
-  <form
-    name="contact"
-    data-netlify="true"
-    validate
-    @submit.prevent="handleSubmit"
-  >
-    <div class="flex flex-col space-y-2 max-w-sm">
-      <input
-        v-model="form.name"
-        type="text"
-        name="name"
-        class="form-input"
-        placeholder="Name"
-        required
-      />
-      <input
-        v-model="form.email"
-        class="form-input"
-        type="email"
-        name="email"
-        placeholder="E-mail"
-        required
-      />
-      <textarea
-        v-model="form.message"
-        name="message"
-        rows="4"
-        class="form-input"
-        placeholder="Message"
-        required
-      >
-      </textarea>
-      <div>
-        <input type="submit" class="form-button" value="Send" />
+  <div>
+    <h1 class="inline-flex mb-8 text-2xl font-bold">Contact</h1>
+    <form
+      name="contact"
+      data-netlify="true"
+      validate
+      @submit.prevent="handleSubmit"
+    >
+      <div class="flex flex-col space-y-2 max-w-sm">
+        <input
+          v-model="form.name"
+          type="text"
+          name="name"
+          class="form-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          v-model="form.email"
+          class="form-input"
+          type="email"
+          name="email"
+          placeholder="E-mail"
+          required
+        />
+        <textarea
+          v-model="form.message"
+          name="message"
+          rows="4"
+          class="form-input"
+          placeholder="Message"
+          required
+        >
+        </textarea>
+        <div>
+          <input type="submit" class="form-button" value="Send" />
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 </template>
 
 <script setup lang="ts">

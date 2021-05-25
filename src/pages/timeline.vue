@@ -1,6 +1,7 @@
 <template>
-  <h1 class="inline-flex mb-8 text-2xl font-bold">Events</h1>
-  <Events />
+  <div>
+    <Events />
+  </div>
 </template>
 
 <script setup lang="ts">
