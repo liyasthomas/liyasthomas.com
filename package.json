@@ -15,7 +15,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{ts,vue}": "eslint --fix",
+    "*.{ts,js,vue}": "eslint --fix",
     "*.{css,scss,vue}": "stylelint --fix"
   },
   "dependencies": {
