@@ -1,8 +1,8 @@
 /* https://github.com/antfu/prism-theme-vars */
-@import 'prism-theme-vars/base.css';
+@import "prism-theme-vars/base.css";
 
 :root {
-  --prism-font-family: 'Input Mono', monospace;
+  --prism-font-family: "Input Mono", monospace;
 }
 
 html:not(.dark) {
@@ -47,8 +47,75 @@ html.dark {
   --prism-decorator: #bd8f8f;
   --prism-regex: #ab5e3f;
   --prism-json-property: #6b8b9e;
-  --prism-line-number: #888888;
-  --prism-line-number-gutter: #eeeeee;
-  --prism-line-highlight-background: #444444;
-  --prism-selection-background: #444444;
+  --prism-line-number: #888;
+  --prism-line-number-gutter: #eee;
+  --prism-line-highlight-background: #444;
+  --prism-selection-background: #444;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply inline-flex;
+  @apply mb-8;
+  @apply font-bold;
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+p {
+  @apply mb-8;
+}
+
+hr {
+  @apply mb-8;
+  @apply border-gray-200;
+  @apply dark:(border-gray-800);
+}
+
+a {
+  @apply rounded-lg;
+  @apply text-green-600;
+  @apply focus:outline-none;
+  @apply focus-within:(ring ring-cyan-400);
+  @apply hover:(text-green-800);
+  @apply dark:(text-cyan-400 focus-within:ring-green-600 hover:text-cyan-200);
+  @apply transition-all;
+}
+
+blockquote {
+  @apply pt-8;
+  @apply pl-8;
+  @apply mb-8;
+  @apply border-l-4;
+  @apply border-gray-200;
+  @apply dark:(border-gray-800);
+}
+
+ul,
+ol {
+  @apply ml-8;
+}
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+li {
+  @apply mb-8;
 }

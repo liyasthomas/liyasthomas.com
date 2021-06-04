@@ -2,8 +2,6 @@
   <header
     class="
       flex
-      bg-gray-50
-      dark:bg-gray-900
       top-0
       flex-col
       p-8
@@ -12,6 +10,7 @@
       flex-row
       items-center
       justify-between)
+      header-gradient
     "
   >
     <nav
@@ -80,5 +79,12 @@ import { isDark, toggleDark } from "~/logic"
   @apply hover:text-blue-800;
   @apply dark:(text-indigo-400 focus-within:ring-blue-600 hover:text-indigo-200);
   @apply transition-all;
+}
+
+.header-gradient {
+  @apply bg-gradient-to-b;
+  @apply from-gray-50;
+  @apply via-gray-50;
+  @apply dark:(from-gray-900 via-gray-900);
 }
 </style>

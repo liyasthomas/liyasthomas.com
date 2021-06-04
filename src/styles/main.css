@@ -1,5 +1,3 @@
-@import "./markdown.css";
-
 * {
   @apply outline-none;
 }
@@ -25,7 +23,7 @@ body {
 
 .router-link-exact-active {
   @apply bg-blue-100;
-  @apply dark: (bg-gray-800);
+  @apply dark:(bg-gray-800);
 }
 
 button {
