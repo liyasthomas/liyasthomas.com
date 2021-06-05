@@ -44,8 +44,11 @@
         </li>
       </ul>
     </div>
-    <div v-if="articleCount < articles.length" class="more-container">
-      <router-link v-if="props.home" to="/blog" class="more-event">
+    <div
+      v-if="props.home ? props.articleCount : articleCount < articles.length"
+      class="more-container"
+    >
+      <router-link v-if="props.home" to="/blog" class="more-article">
         View all
       </router-link>
       <button v-else class="more-article" @click="articleCount += 5">
@@ -65,7 +68,7 @@ const articleCount = ref(5)
 const props = defineProps({
   articleCount: {
     type: Number,
-    default: 3,
+    default: 2,
   },
   home: {
     type: Boolean,

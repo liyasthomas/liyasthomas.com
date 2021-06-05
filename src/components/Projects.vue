@@ -30,7 +30,10 @@
         </li>
       </ul>
     </div>
-    <div v-if="projectCount < projects.length" class="more-container">
+    <div
+      v-if="props.home ? props.projectCount : projectCount < projects.length"
+      class="more-container"
+    >
       <router-link v-if="props.home" to="/works" class="more-project">
         View all
       </router-link>

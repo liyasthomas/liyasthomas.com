@@ -5,24 +5,30 @@ const router = useRouter()
 </script>
 
 <template>
-  <main class="px-4 py-8 text-center dark:text-gray-200">
-    <div>
+  <div class="flex container flex-col min-h-screen">
+    <Header />
+    <main class="flex flex-col flex-1 m-8 text-center dark:text-gray-200">
       <p class="text-4xl">
         <carbon-warning class="inline-block" />
       </p>
-    </div>
-    <router-view />
-    <div>
-      <button class="m-2 mt-8 text-sm" @click="router.back()">Back</button>
-    </div>
-  </main>
+      <router-view />
+      <div>
+        <router-link to="/" class="error-link">Home</router-link>
+        <button class="error-link" @click="router.back()">Back</button>
+      </div>
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <style scoped>
-button {
-  @apply px-2;
-  @apply py-1;
+.error-link {
+  @apply mx-2;
+  @apply my-8;
+  @apply px-4;
+  @apply py-2;
   @apply rounded-lg;
+  @apply text-sm;
   @apply text-gray-500;
   @apply border-2;
   @apply border-gray-500;

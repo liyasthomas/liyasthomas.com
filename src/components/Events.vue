@@ -48,7 +48,10 @@
         </li>
       </ul>
     </div>
-    <div v-if="eventCount < timeline.length" class="more-container">
+    <div
+      v-if="props.home ? props.eventCount : eventCount < timeline.length"
+      class="more-container"
+    >
       <router-link v-if="props.home" to="/timeline" class="more-event">
         View all
       </router-link>
