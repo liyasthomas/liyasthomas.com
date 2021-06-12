@@ -9,5 +9,8 @@ useHead({
 <template>
   <div class="space-y-24">
     <Home />
+    <Events :home="true" />
+    <Articles :home="true" />
+    <Subscribe />
   </div>
 </template>
