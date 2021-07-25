@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="inline-flex mb-8 text-2xl font-bold">About</h1>
+  <div class="space-y-24">
+    <Me />
     <Contact />
   </div>
 </template>
