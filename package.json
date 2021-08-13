@@ -19,27 +19,27 @@
     "*.{css,scss,vue}": "stylelint --fix"
   },
   "dependencies": {
-    "@vueuse/core": "^5.2.0",
+    "@vueuse/core": "^5.3.0",
     "nprogress": "^0.2.0",
     "prism-theme-vars": "^0.2.2",
     "vue": "^3.1.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.7.0",
-    "@iconify/json": "^1.1.384",
+    "@iconify/json": "^1.1.387",
     "@types/nprogress": "^0.2.0",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "@typescript-eslint/parser": "^4.29.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
     "@vitejs/plugin-vue": "^1.4.0",
-    "@vue/compiler-sfc": "^3.1.5",
+    "@vue/compiler-sfc": "^3.2.2",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "@vue/server-renderer": "^3.1.5",
+    "@vue/server-renderer": "^3.2.2",
     "@vueuse/head": "^0.5.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.15.1",
+    "eslint-plugin-vue": "^7.16.0",
     "https-localhost": "^4.6.5",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
@@ -53,11 +53,11 @@
     "vite-plugin-components": "^0.13.2",
     "vite-plugin-icons": "^0.6.5",
     "vite-plugin-md": "^0.10.0",
-    "vite-plugin-pages": "^0.16.0",
+    "vite-plugin-pages": "^0.17.3",
     "vite-plugin-pwa": "^0.10.0",
     "vite-plugin-vue-layouts": "^0.3.1",
     "vite-plugin-windicss": "^1.2.7",
     "vite-ssg": "^0.14.5",
-    "vue-router": "^4.0.10"
+    "vue-router": "^4.0.11"
   }
 }
