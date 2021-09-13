@@ -1,6 +1,13 @@
 export default [
   // { date: "", title: "", description: "", link: "" },
   {
+    date: "13 September 2021",
+    title: "Awaree of GitHub Open Source Grants",
+    description:
+      "Today’s world runs on open source, and open source developers build software for the rest of us.",
+    link: "https://github.blog/2021-09-12-recipients-open-source-grants-github-sponsors-india",
+  },
+  {
     date: "26 March 2021",
     title: "Spoke at GitHub Satellite India",
     description: "Journey of a project made in India: Hoppscotch.",
