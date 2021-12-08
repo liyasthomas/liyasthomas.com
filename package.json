@@ -10,22 +10,16 @@
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "lint:style": "stylelint src/**/*.{css,scss,vue}",
     "lint": "npm run lint:script && npm run lint:style",
-    "lintfix": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix",
-    "prepare": "husky install",
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{ts,js,vue}": "eslint --fix",
-    "*.{css,scss,vue}": "stylelint --fix"
+    "lintfix": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix"
   },
   "dependencies": {
-    "@vueuse/core": "^6.9.0",
+    "@vueuse/core": "^7.1.2",
     "nprogress": "^0.2.0",
     "prism-theme-vars": "^0.2.2",
     "vue": "^3.1.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.10.0",
+    "@antfu/eslint-config": "^0.12.2",
     "@iconify/json": "^1.1.427",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
@@ -35,14 +29,12 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^9.0.1",
     "@vue/server-renderer": "^3.2.21",
-    "@vueuse/head": "^0.5.1",
+    "@vueuse/head": "^0.7.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "https-localhost": "^4.7.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.0.2",
     "markdown-it-prism": "^2.2.1",
     "prettier": "^2.4.1",
     "stylelint": "^14.1.0",
@@ -57,7 +49,7 @@
     "vite-plugin-pwa": "^0.11.5",
     "vite-plugin-vue-layouts": "^0.5.0",
     "vite-plugin-windicss": "^1.5.1",
-    "vite-ssg": "^0.15.6",
+    "vite-ssg": "^0.16.2",
     "vue-router": "^4.0.12"
   }
 }

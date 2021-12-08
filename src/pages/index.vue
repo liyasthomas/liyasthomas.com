@@ -8,9 +8,9 @@ useHead({
 
 <template>
   <div class="space-y-24">
-    <Home />
+    <AppHome />
     <Events :home="true" />
     <Articles :home="true" />
-    <Subscribe />
+    <ProfileSubscribe />
   </div>
 </template>

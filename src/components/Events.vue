@@ -3,13 +3,7 @@
     <h1 class="inline-flex mb-8 text-2xl font-bold">Events</h1>
     <div class="relative flex flex-col">
       <div
-        class="
-          absolute
-          border-r-2 border-gray-200
-          bottom-1
-          top-1
-          dark:border-gray-800
-        "
+        class="absolute border-r-2 border-gray-200 bottom-1 top-1 dark:border-gray-800"
         style="z-index: -1; left: 15px"
       ></div>
       <ul class="flex flex-col justify-end space-y-10 md:space-y-8">
@@ -52,9 +46,9 @@
       v-if="props.home ? props.eventCount : eventCount < timeline.length"
       class="more-container"
     >
-      <router-link v-if="props.home" to="/timeline" class="more-event">
+      <RouterLink v-if="props.home" to="/timeline" class="more-event">
         View all
-      </router-link>
+      </RouterLink>
       <button v-else class="more-event" @click="eventCount += 5">
         Show more
       </button>
@@ -65,7 +59,6 @@
 <script setup lang="ts">
 import timeline from "../assets/data/timeline"
 import { ref } from "vue"
-import { defineProps } from "vue"
 
 const eventCount = ref(5)
 

@@ -1,57 +1,39 @@
 <template>
   <header
-    class="
-      flex
-      top-0
-      flex-col
-      p-8
-      z-1
-      md:(sticky
-      flex-row
-      items-center
-      justify-between)
-      header-gradient
-    "
+    class="flex top-0 flex-col p-8 z-1 md:(sticky flex-row items-center justify-between) header-gradient"
   >
     <nav
-      class="
-        flex flex-col
-        items-start
-        space-y-4
-        md:(space-x-4
-        flex-row
-        space-y-0)
-      "
+      class="flex flex-col items-start space-y-4 md:(space-x-4 flex-row space-y-0)"
     >
-      <router-link to="/" class="header-link">
+      <RouterLink to="/" class="header-link">
         <span>Home</span>
-      </router-link>
+      </RouterLink>
 
-      <router-link to="/timeline" class="header-link">
+      <RouterLink to="/timeline" class="header-link">
         <span>Timeline</span>
-      </router-link>
+      </RouterLink>
 
-      <router-link to="/works" class="header-link">
+      <RouterLink to="/works" class="header-link">
         <span>Works</span>
-      </router-link>
+      </RouterLink>
 
-      <router-link to="/blog" class="header-link">
+      <RouterLink to="/blog" class="header-link">
         <span>Blog</span>
-      </router-link>
+      </RouterLink>
 
-      <router-link to="/newsletter" class="header-link">
+      <RouterLink to="/newsletter" class="header-link">
         <span>Newsletter</span>
-      </router-link>
+      </RouterLink>
 
-      <router-link to="/about" class="header-link">
+      <RouterLink to="/about" class="header-link">
         <span>About</span>
-      </router-link>
+      </RouterLink>
     </nav>
     <div class="flex mt-8 items-start space-x-4 md:(mt-0)">
       <button
         class="header-link"
         aria-label="Toggle dark mode"
-        @click="toggleDark"
+        @click="() => toggleDark()"
       >
         <heroicons-solid-moon v-if="isDark" />
         <heroicons-solid-sun v-else />

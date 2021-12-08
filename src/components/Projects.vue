@@ -34,9 +34,9 @@
       v-if="props.home ? props.projectCount : projectCount < projects.length"
       class="more-container"
     >
-      <router-link v-if="props.home" to="/works" class="more-project">
+      <RouterLink v-if="props.home" to="/works" class="more-project">
         View all
-      </router-link>
+      </RouterLink>
       <button v-else class="more-project" @click="projectCount += 6">
         Show more
       </button>
@@ -47,7 +47,6 @@
 <script setup lang="ts">
 import projects from "../assets/data/projects"
 import { ref } from "vue"
-import { defineProps } from "vue"
 
 const projectCount = ref(6)
 

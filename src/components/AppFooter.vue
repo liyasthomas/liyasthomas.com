@@ -3,14 +3,7 @@
     class="flex flex-col m-8 text-sm md:(flex-row items-center justify-between)"
   >
     <nav
-      class="
-        flex flex-col
-        items-start
-        space-y-4
-        md:(space-x-4
-        space-y-0
-        flex-row)
-      "
+      class="flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row)"
     >
       <a
         class="footer-link"

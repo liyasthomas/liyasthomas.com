@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Subscribe />
+    <ProfileSubscribe />
   </div>
 </template>
 

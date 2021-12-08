@@ -6,18 +6,18 @@ const router = useRouter()
 
 <template>
   <div class="flex container flex-col min-h-screen">
-    <Header />
+    <AppHeader />
     <main class="flex flex-col flex-1 m-8 text-center dark:text-gray-200">
       <p class="text-4xl">
         <carbon-warning class="inline-block" />
       </p>
-      <router-view />
+      <RouterView />
       <div>
-        <router-link to="/" class="error-link">Home</router-link>
+        <RouterLink to="/" class="error-link">Home</RouterLink>
         <button class="error-link" @click="router.back()">Back</button>
       </div>
     </main>
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 

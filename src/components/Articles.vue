@@ -3,13 +3,7 @@
     <h1 class="inline-flex mb-8 text-2xl font-bold">Articles</h1>
     <div class="relative flex flex-col">
       <div
-        class="
-          absolute
-          border-r-2 border-gray-200
-          bottom-1
-          top-1
-          dark:border-gray-800
-        "
+        class="absolute border-r-2 border-gray-200 bottom-1 top-1 dark:border-gray-800"
         style="z-index: -1; left: 15px"
       ></div>
       <ul class="flex flex-col justify-end space-y-10 md:space-y-8">
@@ -23,7 +17,7 @@
         >
           <div class="article-heading">
             <div class="article-indicator"></div>
-            <router-link
+            <RouterLink
               :to="`/blog/${article.slug}`"
               class="article-link article-headline"
             >
@@ -36,7 +30,7 @@
               }}</span>
               <span class="article-divider">—</span>
               <span class="article-title">{{ article.title }}</span>
-            </router-link>
+            </RouterLink>
           </div>
           <div v-if="article.description" class="article-description">
             {{ article.description }}
@@ -48,9 +42,9 @@
       v-if="props.home ? props.articleCount : articleCount < articles.length"
       class="more-container"
     >
-      <router-link v-if="props.home" to="/blog" class="more-article">
+      <RouterLink v-if="props.home" to="/blog" class="more-article">
         View all
-      </router-link>
+      </RouterLink>
       <button v-else class="more-article" @click="articleCount += 5">
         Show more
       </button>
@@ -61,7 +55,6 @@
 <script setup lang="ts">
 import articles from "../assets/data/articles"
 import { ref } from "vue"
-import { defineProps } from "vue"
 
 const articleCount = ref(5)
 

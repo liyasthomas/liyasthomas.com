@@ -6,6 +6,11 @@
         Hi, my name is Liyas Thomas, I'm a designer, developer, and an
         entrepreneur.
       </p>
+      <p>
+        I'm a big fan of open source. I love making tools to improve developer
+        experience.
+      </p>
+      <p>I made Hoppscotch and few other open source projects.</p>
     </div>
   </div>
 </template>

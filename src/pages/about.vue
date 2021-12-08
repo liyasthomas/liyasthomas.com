@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-24">
-    <Me />
+    <ProfileMe />
     <Contact />
   </div>
 </template>
