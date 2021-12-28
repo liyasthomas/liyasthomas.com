@@ -1,6 +1,13 @@
 export default [
   // { date: "", title: "", description: "", slug: "" },
   {
+    date: "13 Dec 2021",
+    title: "Hoppscotch raises $3M in seed funding",
+    description:
+      "In the past year, we have come a long way and we are excited to share the latest milestones in our journey.",
+    slug: "hoppscotch-raises-3m-in-seed-funding",
+  },
+  {
     date: "23 Mar 2020",
     title: "Solve your own problem, everything else will follow 🙌",
     description:
